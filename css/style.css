@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #181818;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    background-color: #0e1010;
+    width: 90%;
+    min-width: 28,125em;
+    max-width: 35em;
+    padding: 1em;
+
+}
+
+fieldset{
+    border: none;
+}
+
+label,
+input,
+textarea,
+.botao{
+    display: block;
+    width: 100%;
+}
+
+input,
+textarea{
+    background-color: rgba(0, 0, 0, 0.36);
+    color: white;
+    padding: .75em;
+    margin: .5em 0 2.5em;
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    outline: 0;
+
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom-color: red;
+    background-color: white;
+}
+
+input:valid,textarea:valid{
+    border-bottom-color: green;
+    background-color: white;
+}
+
+legend{
+    color: #8e999a;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    padding: .5em;
+}
+
+.botao{
+    background-color: #2a2727;
+    color: white;
+    font-size: 1.2em;
+    padding: .7em;
+    border: none;
+    cursor: pointer;
+}
